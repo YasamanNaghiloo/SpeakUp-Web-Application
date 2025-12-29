@@ -1,0 +1,116 @@
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 280px;
+  background-color: #c74b1a;
+  color: #ffffff;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+  text-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1100;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 2px solid #686868;
+  /* blue accent border */
+}
+
+.filter-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Overlay styles */
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.filter-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Close button styles */
+.close-btn {
+  align-self: flex-end;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: color 0.2s ease;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+}
+
+.close-btn:hover {
+  color: #b4b4b4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+}
+
+.filters-btn {
+  background-color: #c74b1a;
+  color: white;
+  border: none;
+  padding: 9px 12px;
+  font-size: 13px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.filters-btn:hover {
+  background-color: #df7777;
+  /* darker blue on hover */
+  padding: 0.7rem 0.9rem;
+}
+
+.filters-btn:focus {
+  outline: 2px solid #f39c12;
+  /* orange focus ring */
+  outline-offset: 2px;
+}
+
+.filter-section {
+margin-bottom: 20px;
+}
+
+.filter-options {
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding: 12px;
+border-radius: 8px;
+}
+
+.filter-options label {
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 15px;
+color: #ffffff;
+}
+
+.filter-options input[type="checkbox"] {
+accent-color: #3f3f3f; /* Same as your theme color */
+}
+
+.header-filter{
+  font-size: 25px;
+}

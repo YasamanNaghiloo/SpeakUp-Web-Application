@@ -1,0 +1,28 @@
+.user-petitions-wrapper {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.user-petitions-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.user-petitions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-petition-card {
+  background: #f2f2f2;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+.user-petition-card h3 {
+  margin: 0 0 0.5rem 0;
+}
